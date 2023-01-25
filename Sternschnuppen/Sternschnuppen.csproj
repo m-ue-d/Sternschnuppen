@@ -8,13 +8,13 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Reference Include="Konsole">
-        <HintPath>..\..\Konsole\bin\Debug\net6.0\Konsole.dll</HintPath>
-      </Reference>
+      <PackageReference Include="Raylib-CsLo" Version="4.2.0.3" />
     </ItemGroup>
 
     <ItemGroup>
-      <PackageReference Include="Raylib-CsLo" Version="4.2.0.3" />
+      <Reference Include="Konsole, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null">
+        <HintPath>..\..\MCD\bin\Debug\net6.0\Konsole.dll</HintPath>
+      </Reference>
     </ItemGroup>
 
 </Project>
