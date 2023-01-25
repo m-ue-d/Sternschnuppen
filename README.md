@@ -1,2 +1,2 @@
 # Sternschnuppen
-A Test program for the MCD.
+A test program for the MCD.
