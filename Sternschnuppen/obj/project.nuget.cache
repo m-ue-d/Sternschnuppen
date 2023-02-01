@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "HKoz8v5KXFcNNkjE9Sl7k5UW+20gWIv5dHSpoUU5SX3i9n5l5rI1gr5Khaqp41P396Y23chLRkId9gCsbXRXeg==",
+  "dgSpecHash": "JXXUOslO1SOmgUV+rIdwiBop9YrGE/qWCnJEgQu4rU1FFb2jyBx5RBs7ZzpHcyenLEFlIPGqmPQEBYMIkgy/6A==",
   "success": true,
-  "projectFilePath": "C:\\Users\\fabia\\RiderProjects\\sternschnuppen_\\Sternschnuppen\\Sternschnuppen.csproj",
+  "projectFilePath": "C:\\Users\\Admin\\RiderProjects\\Sternschnuppen\\Sternschnuppen\\Sternschnuppen.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\fabia\\.nuget\\packages\\microsoft.toolkit.highperformance\\7.1.2\\microsoft.toolkit.highperformance.7.1.2.nupkg.sha512",
-    "C:\\Users\\fabia\\.nuget\\packages\\raylib-cslo\\4.2.0.3\\raylib-cslo.4.2.0.3.nupkg.sha512"
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.toolkit.highperformance\\7.1.2\\microsoft.toolkit.highperformance.7.1.2.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\raylib-cslo\\4.2.0.3\\raylib-cslo.4.2.0.3.nupkg.sha512"
   ],
   "logs": []
 }

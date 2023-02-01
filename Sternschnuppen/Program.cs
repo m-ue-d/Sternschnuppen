@@ -1,4 +1,6 @@
 ﻿using System.Numerics;
+using System.Runtime.CompilerServices;
+using System.Security.Cryptography.X509Certificates;
 using Konsole.konsole.control;
 using Konsole.konsole.utility;
 using Konsole.konsole;
@@ -11,12 +13,15 @@ public static unsafe class Program
     
     const string Resources = @"../../../resources";
     private static Image image;
+    private static Bregion gifRegion;
 
     public static void Main()
     {
-        image = Raylib.LoadImage(@"C:\Users\fabia\Desktop\Habicht.png");
+        image = Raylib.LoadImage(@"C:\Users\Admin\Desktop\x.gif");
         ActionHandler.Listen = Update;
-        Mcd.CharSize = 15;
+        Mcd.CharSize = 10;
+        ActionHandler.ZoomSpeed = 0.5f;
+        ActionHandler.CameraMovementSpeed = 10;
         Mcd.Resize(1000);
         Mcd.Main();
     }
@@ -25,22 +30,22 @@ public static unsafe class Program
     {
         Mcd.Resize(Mcd.CanvasW*Mcd.CanvasH);
 
-        bRegion.FillBackgroundImage(image);
-        /*bRegion.Pack(Vector2.One, bRegion.Size - Vector2.One*2, region2 =>
+        bRegion.Pack(Vector2.One, bRegion.Size-Vector2.One*2, x =>
         {
-            region2.FillBackgroundImage(image);
-        });*/
+            gifRegion = x;
+            gifRegion.FillAnimation(image, 15);
+        });
 
         if (Raylib.IsKeyPressed(KeyboardKey.KEY_F1))
         {
             Util.ToggleFullscreen();
         }
         
-        if (Raylib.IsKeyPressed(KeyboardKey.KEY_RIGHT_SHIFT))
+        if (Raylib.IsKeyDown(KeyboardKey.KEY_RIGHT_SHIFT))
         {
             Mcd.Zoom += ActionHandler.ZoomSpeed;
         }
-        if (Raylib.IsKeyPressed(KeyboardKey.KEY_LEFT_SHIFT))
+        if (Raylib.IsKeyDown(KeyboardKey.KEY_LEFT_SHIFT))
         {
             Mcd.Zoom -= ActionHandler.ZoomSpeed;
         }
