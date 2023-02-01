@@ -6,13 +6,15 @@ using Raylib_CsLo;
 
 namespace Sternschnuppen;
 
-public static class Program
+public static unsafe class Program
 {
     
     const string Resources = @"../../../resources";
+    private static Image image;
 
     public static void Main()
     {
+        image = Raylib.LoadImage(@"C:\Users\fabia\Desktop\Habicht.png");
         ActionHandler.Listen = Update;
         Mcd.CharSize = 15;
         Mcd.Resize(1000);
@@ -21,14 +23,14 @@ public static class Program
 
     public static void Update(Bregion bRegion)
     {
-        Mcd.Resize(Mcd.CanvasW*Mcd.CanvasH);    //TODO: Make it work without resizing
-        
-        bRegion.FillColor('Y', Raylib.RED);
-        bRegion.Pack(Vector2.One, bRegion.Size - Vector2.One*2, region2 =>
+        Mcd.Resize(Mcd.CanvasW*Mcd.CanvasH);
+
+        bRegion.FillBackgroundImage(image);
+        /*bRegion.Pack(Vector2.One, bRegion.Size - Vector2.One*2, region2 =>
         {
-            region2.FillColor('X',Raylib.WHITE);
-        });
-        
+            region2.FillBackgroundImage(image);
+        });*/
+
         if (Raylib.IsKeyPressed(KeyboardKey.KEY_F1))
         {
             Util.ToggleFullscreen();
