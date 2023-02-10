@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Admin\\RiderProjects\\Sternschnuppen\\Sternschnuppen\\Sternschnuppen.csproj": {}
+    "C:\\Users\\fabia\\RiderProjects\\sternschnuppen_\\Sternschnuppen\\Sternschnuppen.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Admin\\RiderProjects\\Sternschnuppen\\Sternschnuppen\\Sternschnuppen.csproj": {
+    "C:\\Users\\fabia\\RiderProjects\\sternschnuppen_\\Sternschnuppen\\Sternschnuppen.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Admin\\RiderProjects\\Sternschnuppen\\Sternschnuppen\\Sternschnuppen.csproj",
+        "projectUniqueName": "C:\\Users\\fabia\\RiderProjects\\sternschnuppen_\\Sternschnuppen\\Sternschnuppen.csproj",
         "projectName": "Sternschnuppen",
-        "projectPath": "C:\\Users\\Admin\\RiderProjects\\Sternschnuppen\\Sternschnuppen\\Sternschnuppen.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Admin\\RiderProjects\\Sternschnuppen\\Sternschnuppen\\obj\\",
+        "projectPath": "C:\\Users\\fabia\\RiderProjects\\sternschnuppen_\\Sternschnuppen\\Sternschnuppen.csproj",
+        "packagesPath": "C:\\Users\\fabia\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fabia\\RiderProjects\\sternschnuppen_\\Sternschnuppen\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\fabia\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -61,7 +61,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
